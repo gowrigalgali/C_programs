@@ -4,7 +4,7 @@
 int search(int array[],int key,int size);
 int main(){
 
-int key,a,size;
+int key,b,size;
 printf("Enter the size of the array:");
 scanf("%d",&size);
 if (size <= 0) {
@@ -19,8 +19,8 @@ printf("Enter the key:");
 scanf("%d",&key);
 clock_t t;
 t=clock();
-a=search(array,key,size);
-printf("%d",a);
+b=search(array,key,size);
+printf("%d",b);
 t=clock()-t;
     printf("\nThe execution time is %ld",((double)t)/CLOCKS_PER_SEC);
 }
